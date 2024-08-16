@@ -500,13 +500,13 @@ void view_new_game() {
 
   add_button(ss, "restart(document.getElementById(\"seed\").value)", "start a free game");
 
-  ss << " seed: <input id=\"seed\" length=10 type=text/><br/>";
-  ss << "<br/><br/>";
+  ss << " seed: <input id=\"seed\" length=10 type=text/> | ";
 
 
   string sl = secleft;
 
   add_button(ss, "restart(\"daily\")", "start a daily game #" + to_string(daily) + " (" + sl + " left)");
+  ss << "<br/><br/>";
 
   ss << "</div></div>";
   set_value("output", ss.str());
