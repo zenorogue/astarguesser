@@ -272,6 +272,7 @@ void gen_board() {
     create_point_barriers(hrpick({1, 2, 5, 10, 20}));
     create_line_barriers(hrpick({0, 0, 1, 2, 5, 10, 15, 20}), 0);
     create_line_barriers(0, hrpick({0, 0, 1, 2, 5, 10, 15, 20}));
+    wallin();
     after = [] { if(hrand(100) < 50) startcorners(); if(hrand(100) < 50) endcorners(); connect_fu(1, 0); };
     }
   else if(algo < 50) {
