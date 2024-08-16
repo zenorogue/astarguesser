@@ -240,7 +240,7 @@ void gen_puzzle() {
   if(h1 == 6) factor = 0.5;
   if(h1 == 5) factor = 0;
 
-  if(!astar()) {} // goto restart;
+  if(!astar()) goto restart;
   bfs();
   current_solved = false;
 
